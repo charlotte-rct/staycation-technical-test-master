@@ -1,0 +1,48 @@
+@use "../../styles/colors.scss" as c;
+
+.hotel-card {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  &--unavailable {
+    opacity: 0.5;
+  }
+
+  &__picture {
+    border-radius: 8px;
+    max-width: 100%;
+    margin-bottom: 4px;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+
+    &__name {
+      font-weight: bold;
+    }
+    &__reviews {
+      color: c.$text-light;
+    }
+  }
+  &__prices {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    &__price {
+      color: c.$text-light;
+    }
+    &__discount-price {
+      font-weight: bold;
+    }
+    &__percentage {
+      color: c.$text-white;
+      background-color: c.$primary;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 4px;
+    }
+  }
+}

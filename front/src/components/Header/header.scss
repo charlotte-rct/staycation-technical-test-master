@@ -1,0 +1,28 @@
+@use "../../styles/colors.scss" as c;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 80px;
+  padding: 0 24px;
+  border-bottom: 1px solid c.$gray-border;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  .logo {
+    width: 190px;
+    height: 20px;
+    color: c.$primary;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.header__user {
+  font-size: 14px;
+  font-weight: bold;
+}

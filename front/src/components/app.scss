@@ -1,0 +1,12 @@
+.app {
+  &__body {
+    &__hotels {
+      display: flex;
+      flex-wrap: wrap;
+      list-style-type: none;
+      gap: 32px;
+      justify-content: center;
+      margin: 32px 0;
+    }
+  }
+}

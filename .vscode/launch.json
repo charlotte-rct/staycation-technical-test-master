@@ -1,0 +1,24 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Node Back",
+      "program": "${workspaceFolder}/back/node/app.ts",
+      "runtimeExecutable": "${workspaceFolder}/back/node/node_modules/.bin/ts-node",
+      "args": ["app.ts"],
+      "env": {
+        "BABEL_ENV": "development"
+      },
+      "sourceMaps": true,
+      "smartStep": true,
+      "outputCapture": "std",
+      "console": "integratedTerminal", // optional
+      "cwd": "${workspaceFolder}/back/node"
+    }
+  ]
+}
