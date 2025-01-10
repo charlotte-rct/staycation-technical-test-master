@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 
-import Header from "./Header";
+import Header from "./Header/Header";
 import { Hotel } from "../types/hotels";
 import { getHotels } from "../api/hotels";
-import HotelCard from "./HotelCard";
+import HotelCard from "./HotelCard/HotelCard";
 
 import "./app.scss";
 

@@ -12,7 +12,7 @@ app.get("/", function (req, res) {
 });
 
 app.get("/users/:id", async (req, res) => {
-  const user = await getUser(req.params.id);
+  const user = await getUser(Number(req.params.id));
   res.send(user);
 });
 
