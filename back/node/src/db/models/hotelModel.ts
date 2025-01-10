@@ -1,8 +1,9 @@
 import camelCase from "camelcase-keys";
 
 import DB from "../db";
+import { HotelWithPrices } from "../../types/hotels";
 
-export const getHotels = async () => {
+export const getHotelsWithLowPrice = async (): Promise<HotelWithPrices[]> => {
   const res = await DB.query(`
     WITH last_sale_id AS (
     SELECT MAX(id) AS sale_id

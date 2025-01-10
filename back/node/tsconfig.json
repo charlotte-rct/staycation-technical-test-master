@@ -107,7 +107,7 @@
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
-  }
-  // "include": ["src/**/*"],                  // Include all TypeScript files in src
-  // "exclude": ["node_modules", "dist"]       // Exclude specific folders
+  },
+  "include": ["src/**/*.ts", "src/services/userService.testts"],
+  "exclude": ["node_modules"] // Exclude specific folders
 }
